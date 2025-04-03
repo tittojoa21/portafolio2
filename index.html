@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titojoa | Desarrollador Full Stack</title>
+    <meta name="description" content="Portafolio profesional de Joaquín Rodríguez (Titojoa), Desarrollador Full Stack con experiencia en Python, Flask, JavaScript y más">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo tecnológico -->
+    <div class="tech-background">
+        <div class="particles" id="particles-js"></div>
+        <div class="circuit-lines"></div>
+    </div>
+    
+    
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo">Titojoa<span class="blink">_</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li class="nav-item language-switcher">
+                    <div class="language-options">
+                        <a href="#" class="lang-option active" data-lang="es">ES</a>
+                        <span class="language-separator">|</span>
+                        <a href="#" class="lang-option" data-lang="en">EN</a>
+                        <span class="language-separator">|</span>
+                        <a href="#" class="lang-option" data-lang="pt">PT</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Home -->
+    <section id="home" class="section">
+        <div class="home-content">
+            <div class="home-text">
+                <h1 class="title glitch" data-text="Hola, soy Joaquin">Hola, soy Joaquin</h1>
+                <h2 class="subtitle">Desarrollador <span class="typed-text"></span><span class="typed-cursor">|</span></h2>
+                <p class="description">Creando soluciones digitales con código elegante y eficiente.</p>
+                <div class="home-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contáctame</a>
+                </div>
+            </div>
+            <div class="home-image">
+                <div class="hexagon-container">
+                    <div class="hexagon">
+                        <div class="hexagon-inner">
+                            <div class="hexagon-image"></div>
+                        </div>
+                    </div>
+                    <div class="hexagon-border"></div>
+                    <div class="tech-icons">
+                        <i class="fab fa-html5" style="--delay: 0s"></i>
+                        <i class="fab fa-css3-alt" style="--delay: 0.2s"></i>
+                        <i class="fab fa-js" style="--delay: 0.4s"></i>
+                        <i class="fab fa-react" style="--delay: 0.6s"></i>
+                        <i class="fab fa-python" style="--delay: 0.8s"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Desplazar hacia abajo</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección About -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 class="section-title"><span class="section-number">01.</span> Sobre mí</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="lang-es">¡Hola! Soy Joaquín Rodríguez, también conocido como <strong>Titojoa</strong>, un apasionado desarrollador Full Stack de 20 años actualmente cursando la Tecnicatura Universitaria en Programación en la Universidad Austral.</p>
+                <p class="lang-en" style="display:none">Hello! I'm Joaquín Rodríguez, also known as <strong>Titojoa</strong>, a passionate 20-year-old Full Stack Developer currently pursuing a University Technician degree in Programming at Austral University.</p>
+                <p class="lang-pt" style="display:none">Olá! Eu sou Joaquín Rodríguez, também conhecido como <strong>Titojoa</strong>, um apaixonado Desenvolvedor Full Stack de 20 anos atualmente cursando o Técnico Universitário em Programação na Universidade Austral.</p>
+                
+                <p class="lang-es">Con más de <strong>5 años de experiencia</strong> en desarrollo de software, he trabajado con múltiples tecnologías y lenguajes de programación, creando soluciones robustas y eficientes.</p>
+                <p class="lang-en" style="display:none">With over <strong>5 years of experience</strong> in software development, I've worked with multiple technologies and programming languages, creating robust and efficient solutions.</p>
+                <p class="lang-pt" style="display:none">Com mais de <strong>5 anos de experiência</strong> em desenvolvimento de software, trabalhei com múltiplas tecnologias e linguagens de programação, criando soluções robustas e eficientes.</p>
+                
+                <p class="lang-es">Especializado en desarrollo web con Flask y JavaScript, he creado aplicaciones completas con integraciones a WhatsApp para negocios locales.</p>
+                <p class="lang-en" style="display:none">Specialized in web development with Flask and JavaScript, I've created complete applications with WhatsApp integrations for local businesses.</p>
+                <p class="lang-pt" style="display:none">Especializado em desenvolvimento web com Flask e JavaScript, criei aplicações completas com integrações ao WhatsApp para negócios locais.</p>
+                
+                <p class="lang-es">Además de mi pasión por la programación, soy <strong>trilingüe</strong> (Español, Inglés y Portugués), lo que me permite comunicarme efectivamente en diversos entornos.</p>
+                <p class="lang-en" style="display:none">Beyond my passion for programming, I'm <strong>trilingual</strong> (Spanish, English, and Portuguese), which allows me to communicate effectively in diverse environments.</p>
+                <p class="lang-pt" style="display:none">Além da minha paixão por programação, sou <strong>trilíngue</strong> (Espanhol, Inglês e Português), o que me permite comunicar efetivamente em diversos ambientes.</p>
+                
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label lang-es">Nombre:</span>
+                        <span class="info-label lang-en" style="display:none">Name:</span>
+                        <span class="info-label lang-pt" style="display:none">Nome:</span>
+                        <span class="info-value">Joaquín Rodríguez</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label lang-es">Edad:</span>
+                        <span class="info-label lang-en" style="display:none">Age:</span>
+                        <span class="info-label lang-pt" style="display:none">Idade:</span>
+                        <span class="info-value">20 años</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label lang-es">Email:</span>
+                        <span class="info-label lang-en" style="display:none">Email:</span>
+                        <span class="info-label lang-pt" style="display:none">Email:</span>
+                        <span class="info-value">joaquin.rg04@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label lang-es">Teléfono:</span>
+                        <span class="info-label lang-en" style="display:none">Phone:</span>
+                        <span class="info-label lang-pt" style="display:none">Telefone:</span>
+                        <span class="info-value">+54 3472550368</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label lang-es">Estudios:</span>
+                        <span class="info-label lang-en" style="display:none">Education:</span>
+                        <span class="info-label lang-pt" style="display:none">Estudos:</span>
+                        <span class="info-value">Tecnicatura Universitaria en Programación</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label lang-es">Universidad:</span>
+                        <span class="info-label lang-en" style="display:none">University:</span>
+                        <span class="info-label lang-pt" style="display:none">Universidade:</span>
+                        <span class="info-value">Universidad Austral</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary download-cv">
+                    <span class="lang-es">Descargar CV</span>
+                    <span class="lang-en" style="display:none">Download CV</span>
+                    <span class="lang-pt" style="display:none">Baixar CV</span>
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+            <div class="about-image">
+                <div class="floating-cube">
+                    <div class="cube">
+                        <div class="face front"><i class="fab fa-js"></i></div>
+                        <div class="face back"><i class="fab fa-python"></i></div>
+                        <div class="face right"><i class="fab fa-react"></i></div>
+                        <div class="face left"><i class="fas fa-database"></i></div>
+                        <div class="face top"><i class="fab fa-html5"></i></div>
+                        <div class="face bottom"><i class="fab fa-css3-alt"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Skills -->
+    <section id="skills" class="section">
+        <div class="section-header">
+            <h2 class="section-title"><span class="section-number">02.</span> Habilidades</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-content">
+            <div class="skills-intro">
+                <p class="lang-es">Estas son las tecnologías con las que he trabajado a lo largo de mi trayectoria como desarrollador:</p>
+                <p class="lang-en" style="display:none">These are the technologies I've worked with throughout my career as a developer:</p>
+                <p class="lang-pt" style="display:none">Estas são as tecnologias com as quais trabalhei ao longo da minha carreira como desenvolvedor:</p>
+            </div>
+            
+            <div class="skills-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="frontend">
+                        <span class="lang-es">Frontend</span>
+                        <span class="lang-en" style="display:none">Frontend</span>
+                        <span class="lang-pt" style="display:none">Frontend</span>
+                    </button>
+                    <button class="tab-btn" data-category="backend">
+                        <span class="lang-es">Backend</span>
+                        <span class="lang-en" style="display:none">Backend</span>
+                        <span class="lang-pt" style="display:none">Backend</span>
+                    </button>
+                    <button class="tab-btn" data-category="database">
+                        <span class="lang-es">Bases de Datos</span>
+                        <span class="lang-en" style="display:none">Databases</span>
+                        <span class="lang-pt" style="display:none">Bancos de Dados</span>
+                    </button>
+                    <button class="tab-btn" data-category="tools">
+                        <span class="lang-es">Herramientas</span>
+                        <span class="lang-en" style="display:none">Tools</span>
+                        <span class="lang-pt" style="display:none">Ferramentas</span>
+                    </button>
+                </div>
+                
+                <div class="category-content active" id="frontend">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-content" id="backend">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-code"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-flask"></i>
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-content" id="database">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-database"></i>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-content" id="tools">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-terminal"></i>
+                            <span>Terminal</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp API</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-level="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="languages-section">
+                <h3>
+                    <span class="lang-es">Idiomas</span>
+                    <span class="lang-en" style="display:none">Languages</span>
+                    <span class="lang-pt" style="display:none">Idiomas</span>
+                </h3>
+                <div class="languages-container">
+                    <div class="language-item">
+                        <div class="language-info">
+                            <span class="flag-icon">🇪🇸</span>
+                            <span>Español</span>
+                        </div>
+                        <div class="language-level">Nativo</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-info">
+                            <span class="flag-icon">🇬🇧</span>
+                            <span>Inglés</span>
+                        </div>
+                        <div class="language-level">Avanzado</div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-info">
+                            <span class="flag-icon">🇵🇹</span>
+                            <span>Portugués</span>
+                        </div>
+                        <div class="language-level">Avanzado</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Projects -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2 class="section-title"><span class="section-number">03.</span> Proyectos</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-content">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="lang-es">Todos</span>
+                    <span class="lang-en" style="display:none">All</span>
+                    <span class="lang-pt" style="display:none">Todos</span>
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <span class="lang-es">Web</span>
+                    <span class="lang-en" style="display:none">Web</span>
+                    <span class="lang-pt" style="display:none">Web</span>
+                </button>
+                <button class="filter-btn" data-filter="ecommerce">
+                    <span class="lang-es">E-commerce</span>
+                    <span class="lang-en" style="display:none">E-commerce</span>
+                    <span class="lang-pt" style="display:none">E-commerce</span>
+                </button>
+                <button class="filter-btn" data-filter="flask">
+                    <span class="lang-es">Flask</span>
+                    <span class="lang-en" style="display:none">Flask</span>
+                    <span class="lang-pt" style="display:none">Flask</span>
+                </button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Proyecto 1 - Sistema de Gestión -->
+                <div class="project-card" data-category="web,flask">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">Sistema Flask</div>
+                        <div class="project-links">
+                            <a href="https://titojoa21.pythonanywhere.com/" target="_blank" class="project-link" aria-label="Ver proyecto Sistema de Gestión">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Billetera Virtual</h3>
+                        <p class="project-description lang-es">Aplicación web completa con autenticación, base de datos SQLite y panel de administración desarrollada con Flask.</p>
+                        <p class="project-description lang-en" style="display:none">Complete web application with authentication, SQLite database and admin panel developed with Flask.</p>
+                        <p class="project-description lang-pt" style="display:none">Aplicação web completa com autenticação, banco de dados SQLite e painel de administração desenvolvida com Flask.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 - SIU Hamburguesería -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">SIU Hamburguesería</div>
+                        <div class="project-links">
+                            <a href="https://siu-two.vercel.app/" target="_blank" class="project-link" aria-label="Ver proyecto SIU Hamburguesería">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">SIU Hamburguesería</h3>
+                        <p class="project-description lang-es">Sitio web de hamburguesería con carrito de compras y envío de pedidos por WhatsApp.</p>
+                        <p class="project-description lang-en" style="display:none">Burger restaurant website with shopping cart and WhatsApp order submission.</p>
+                        <p class="project-description lang-pt" style="display:none">Site de hamburgueria com carrinho de compras e envio de pedidos por WhatsApp.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">WhatsApp API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 - Dulces A -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">Dulcesa</div>
+                        <div class="project-links">
+                            <a href="https://dulcesa.vercel.app/" target="_blank" class="project-link" aria-label="Ver proyecto Dulces A">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dulcesa</h3>
+                        <p class="project-description lang-es">Tienda online de postres con selección de productos y envío de pedidos por WhatsApp.</p>
+                        <p class="project-description lang-en" style="display:none">Online dessert shop with product selection and WhatsApp order submission.</p>
+                        <p class="project-description lang-pt" style="display:none">Loja online de sobremesas com seleção de produtos e envio de pedidos por WhatsApp.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 4 - Rich Tawny -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">Rich Burgers</div>
+                        <div class="project-links">
+                            <a href="https://rich-tawny.vercel.app/" target="_blank" class="project-link" aria-label="Ver proyecto Rich Tawny">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Rich Burgers</h3>
+                        <p class="project-description lang-es">Sitio web para hamburguesería con menú interactivo y sistema de pedidos por WhatsApp.</p>
+                        <p class="project-description lang-en" style="display:none">Burger restaurant website with interactive menu and WhatsApp order system.</p>
+                        <p class="project-description lang-pt" style="display:none">Site para hamburgueria com menu interativo e sistema de pedidos por WhatsApp.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">UX Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 5 - Moda Urbana -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">Moda Urbana</div>
+                        <div class="project-links">
+                            <a href="https://moda-urbana-three.vercel.app/" target="_blank" class="project-link" aria-label="Ver proyecto Moda Urbana">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Moda Urbana</h3>
+                        <p class="project-description lang-es">Tienda online de ropa urbana con galería de productos y pedidos por WhatsApp.</p>
+                        <p class="project-description lang-en" style="display:none">Urban clothing online store with product gallery and WhatsApp orders.</p>
+                        <p class="project-description lang-pt" style="display:none">Loja online de roupas urbanas com galeria de produtos e pedidos por WhatsApp.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contact -->
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2 class="section-title"><span class="section-number">04.</span> Contacto</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 class="contact-subtitle lang-es">¡Hablemos!</h3>
+                <h3 class="contact-subtitle lang-en" style="display:none">Let's talk!</h3>
+                <h3 class="contact-subtitle lang-pt" style="display:none">Vamos conversar!</h3>
+                
+                <p class="contact-text lang-es">¿Tienes un proyecto en mente o quieres colaborar? No dudes en contactarme, estaré encantado de escucharte y ayudarte en lo que necesites.</p>
+                <p class="contact-text lang-en" style="display:none">Do you have a project in mind or want to collaborate? Feel free to contact me, I'll be happy to hear from you and help you with whatever you need.</p>
+                <p class="contact-text lang-pt" style="display:none">Você tem um projeto em mente ou quer colaborar? Sinta-se à vontade para entrar em contato, ficarei feliz em ouvir você e ajudá-lo no que for preciso.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label lang-es">Email</span>
+                            <span class="detail-label lang-en" style="display:none">Email</span>
+                            <span class="detail-label lang-pt" style="display:none">Email</span>
+                            <a href="mailto:joaquin.rg04@gmail.com" class="detail-value">joaquin.rg04@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label lang-es">Teléfono</span>
+                            <span class="detail-label lang-en" style="display:none">Phone</span>
+                            <span class="detail-label lang-pt" style="display:none">Telefone</span>
+                            <a href="tel:+543472550368" class="detail-value">+54 3472550368</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">WhatsApp</span>
+                            <a href="https://wa.me/543472550368" target="_blank" class="detail-value">+54 3472550368</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">GitHub</span>
+                            <a href="https://github.com/titojoa" target="_blank" class="detail-value">github.com/titojoa</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/titojoa" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="form-contact">
+                    <div class="form-group">
+                        <label for="name" class="lang-es">Nombre</label>
+                        <label for="name" class="lang-en" style="display:none">Name</label>
+                        <label for="name" class="lang-pt" style="display:none">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="lang-es">Email</label>
+                        <label for="email" class="lang-en" style="display:none">Email</label>
+                        <label for="email" class="lang-pt" style="display:none">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="lang-es">Asunto</label>
+                        <label for="subject" class="lang-en" style="display:none">Subject</label>
+                        <label for="subject" class="lang-pt" style="display:none">Assunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="lang-es">Mensaje</label>
+                        <label for="message" class="lang-en" style="display:none">Message</label>
+                        <label for="message" class="lang-pt" style="display:none">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="lang-es">Enviar Mensaje</span>
+                        <span class="lang-en" style="display:none">Send Message</span>
+                        <span class="lang-pt" style="display:none">Enviar Mensagem</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Titojoa</span>
+                <span class="blink">_</span>
+            </div>
+            <div class="footer-text">
+                <p class="lang-es">Desarrollado con ❤️ por Joaquín Rodríguez © 2023</p>
+                <p class="lang-en" style="display:none">Developed with ❤️ by Joaquín Rodríguez © 2023</p>
+                <p class="lang-pt" style="display:none">Desenvolvido com ❤️ por Joaquín Rodríguez © 2023</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">
+                    <span class="lang-es">Inicio</span>
+                    <span class="lang-en" style="display:none">Home</span>
+                    <span class="lang-pt" style="display:none">Início</span>
+                </a>
+                <a href="#about" class="footer-link">
+                    <span class="lang-es">Sobre mí</span>
+                    <span class="lang-en" style="display:none">About</span>
+                    <span class="lang-pt" style="display:none">Sobre</span>
+                </a>
+                <a href="#skills" class="footer-link">
+                    <span class="lang-es">Habilidades</span>
+                    <span class="lang-en" style="display:none">Skills</span>
+                    <span class="lang-pt" style="display:none">Habilidades</span>
+                </a>
+                <a href="#projects" class="footer-link">
+                    <span class="lang-es">Proyectos</span>
+                    <span class="lang-en" style="display:none">Projects</span>
+                    <span class="lang-pt" style="display:none">Projetos</span>
+                </a>
+                <a href="#contact" class="footer-link">
+                    <span class="lang-es">Contacto</span>
+                    <span class="lang-en" style="display:none">Contact</span>
+                    <span class="lang-pt" style="display:none">Contato</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de volver arriba -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
