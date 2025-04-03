@@ -15,11 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 cvDownloadDelay: 1000,
                 alertDuration: 500, 
             };
+            this.config.emailJS = {
+                serviceID: 'service_p40d85b',
+                templateID: 'template_nf0quno',
+                userID: 'zcV3lRxsr5KeskCAL'
+            };
 
             this.cacheDOM();
             this.initModules();
             this.setupEventListeners();
             this.initLanguage();
+            this.initEmailJS();
         }
 
         // Cachear elementos DOM
@@ -635,12 +641,19 @@ document.addEventListener('DOMContentLoaded', () => {
             
             this.dom.contactForm.addEventListener('submit', this.handleFormSubmit.bind(this));
         }
+
+        initEmailJS() {
+            if (typeof emailjs !== 'undefined') {
+                emailjs.init(this.config.emailJS.userID);
+            }
+        }
         
+         
         async handleFormSubmit(e) {
             e.preventDefault();
             
-            const formData = new FormData(this.dom.contactForm);
-            const submitBtn = this.dom.contactForm.querySelector('button[type="submit"]');
+            const form = this.dom.contactForm;
+            const submitBtn = form.querySelector('button[type="submit"]');
             
             const errorMessages = {
                 es: {
@@ -663,10 +676,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             };
             
-            // Validación
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const message = formData.get('message');
+            // Validation
+            const name = form.name.value;
+            const email = form.email.value;
+            const message = form.message.value;
             
             if (!name || !email || !message) {
                 this.showAlert(errorMessages[this.currentLang].required, 'error');
@@ -678,16 +691,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
             
-            // Estado de carga
+            // Loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = this.getLoadingText();
             
             try {
-                // Simular envío
-                await new Promise(resolve => setTimeout(resolve, this.config.formSubmitDelay));
+                // Send email using EmailJS
+                await emailjs.sendForm(
+                    this.config.emailJS.serviceID,
+                    this.config.emailJS.templateID,
+                    form,
+                    this.config.emailJS.userID
+                );
                 
                 this.showAlert(errorMessages[this.currentLang].success, 'success');
-                this.dom.contactForm.reset();
+                form.reset();
                 
                 if (typeof gtag !== 'undefined') {
                     gtag('event', 'contact_form_submit', {
@@ -696,8 +714,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
             } catch (error) {
+                console.error('Failed to send email:', error);
                 this.showAlert(errorMessages[this.currentLang].error, 'error');
-                console.error('Error submitting form:', error);
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = this.getSubmitButtonText();
